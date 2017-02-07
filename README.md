@@ -21,17 +21,17 @@ ping.path = /ping
 Нужно скомпилировать бинарник под ту платформу, на которой запущен Zabbix сервер, для этого нужно использовать команду:
 
 ````Bash
-env GOOS=<OS> GOARCH=<ARCH> go build -v github.com/username/fcgi_stat_getter
+env GOOS={OS} GOARCH={ARCH} go build -v github.com/username/fcgi_stat_getter
 ````
 
-<OS> - тип операционной системы, может быть:
+{OS} - тип операционной системы, может быть:
 
 * Mac os - darwin
 * Windows - windows
 * Linux - linux
 * FreeBSD - freebsd
 
-<ARCH> - архитектура, может быть:
+{ARCH} - архитектура, может быть:
 
 * x86_64 - amd64
 * x86 - 386
